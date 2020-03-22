@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Pizza 42</title>
+  <title>Yukti's Pizza</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,28 +12,31 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">🍕Pizza42🍕</a>
-
-
+      <a class="navbar-brand" href="#" style="margin-top: 10px;">
+      <img src="/assets/pizza.png" width="30" height="30" style="display:inline; white-space:nowrap;" alt="">&nbsp;Yukti's Pizza</a>
   </div>
-      <ul class="nav navbar-nav">
-
-      <li>  <a routerLink="/">Home</a>&nbsp;</li>
-        <li>  <a routerLink="profile" *ngIf="auth.loggedIn">Profile</a>&nbsp; </li>
+      <ul class="nav navbar-nav" style="margin-top: 10px;">
+        <li>  <a routerLink="/">Home</a>&nbsp;</li>
+        <li>  <a routerLink="profile" *ngIf="auth.loggedIn">Profile</a>&nbsp;</li>
         <li>  <a routerLink="external-api" *ngIf="auth.loggedIn">Google API</a></li>
-
       </ul>
-    </div>
   <div class="container">
+    <ul style="list-style-type:none;">
 
-    <li>  <button class="btn btn-info" style="float: right" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</button>&nbsp;</li>
-    <li>  <button class="btn btn-info" style="float: right" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</button>&nbsp; </li>
+    <li><button class="btn btn-primary" style="float: right; margin-top: 18px;" (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</button></li>
+    <li><button class="btn btn-primary" style="float: right; margin-top: 18px;" (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</button></li>
+  </ul>
   </div>
+</div>
 </nav>
-
-
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
   </body>
   </html>
