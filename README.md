@@ -2,29 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
-## Development server
+# npm install
+In the project directory, you can run: npm install to create the node_modules
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# npm run dev
+This command will run the app in the development mode.
+Open http://localhost:3000 to view it in the browser. Please note that the page will reload if you make edits to the src directory.
 
-## Code scaffolding
+# Authentication
+You can log or sign up in with email/password or Google/Gmail authentication via Auth0
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Verification
+If you log in with email/password, you will receive an email to verify your email address.
+Once the profile has been verified, a verification check has been added to the profile page, and you can order from order pizza page on the app.
+If you are not a verified user then you wont be able to order anything from the app, however you will be able to browse through the menu and perform other functions in the app.
 
-## Build
+# API Calls
+The API tests are under the Google API tab.
+If you are authenticated with Google, the Google Connections button queries the Google People API. If this is the first time you are making the call, it will store the results in your Auth0 metadata. If you have already stored it in your metadata, it returns the number of connections that you have.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Auth0-Pizza42-YuktiAhuja
-# Auth0-Pizza42-YuktiAhuja
-# auth0-pizza42-yukti
+# Auth0 Tenant
+Tenant: dev-7b8yj73c

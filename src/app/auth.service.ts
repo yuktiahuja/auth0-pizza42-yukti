@@ -14,7 +14,7 @@ export class AuthService {
     createAuth0Client({
       domain: "dev-7b8yj63c.auth0.com",
       client_id: "YaQUI45Auk5c1xy7TpGZ9gQewXzmIsvt",
-      redirect_uri: `${window.location.origin}`,
+      redirect_uri: "https://yuktipizza.z13.web.core.windows.net/",
       audience: "https://dev-7b8yj63c.auth0.com/api/v2/"
     })
   ) as Observable<Auth0Client>).pipe(
