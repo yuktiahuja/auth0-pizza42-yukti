@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "auth0-angular-demo": {
+    "yukti-auth0-pizza42": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/auth0-angular-demo",
+            "outputPath": "dist/yukti-auth0-pizza42",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,13 +62,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "auth0-angular-demo:build",
+            "browserTarget": "yukti-auth0-pizza42:build",
              "proxyConfig": "proxy.conf.json"
 
           },
           "configurations": {
             "production": {
-              "browserTarget": "auth0-angular-demo:build:production"
+              "browserTarget": "yukti-auth0-pizza42:build:production"
 
             }
           }
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "auth0-angular-demo:build"
+            "browserTarget": "yukti-auth0-pizza42:build"
 
           }
         },
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "auth0-angular-demo:serve"
+            "devServerTarget": "yukti-auth0-pizza42:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "auth0-angular-demo:serve:production"
+              "devServerTarget": "yukti-auth0-pizza42:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "auth0-angular-demo",
+  "defaultProject": "yukti-auth0-pizza42",
   "cli": {
     "analytics": "c5d9014b-05ab-4fb5-94ec-447ee7e7b84b"
   }

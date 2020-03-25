@@ -122,7 +122,12 @@ export class AuthService {
       });
     }
   }
-
+  public isAuthenticated(): boolean {
+      // Check whether the current time is past the
+      // Access Token's expiry time
+      const expiresAt = JSON.parse(localStorage.getItem('expires_at'));
+      return new Date().getTime() < expiresAt;
+    }
   logout() {
     // Ensure Auth0 client instance exists
     this.auth0Client$.subscribe((client: Auth0Client) => {

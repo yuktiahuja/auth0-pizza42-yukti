@@ -2,15 +2,15 @@
   <div *ngIf="auth.userProfile$ | async as profile" class="Yukti-Order-Pizza">
     <div *ngIf="profile.email_verified" class="Yukti-Order-Pizza">
        <div class="Yukti-Order-Pizza-title">
-          <p align=center><font size="5" color="blue"> Your are a verified email user! Pepperoni Pizza coming right up!</font></p>
-        <div align=center style="margin: 100px; position: relative;">
-        <img src="../../assets/pizza-pepperoni.jpg"  style="width: 50%; height:50%;"/>
+          <p style="margin: 100px; position: relative;" align=center><font size="5" color="blue"> Your are a verified email user! Pepperoni Pizza coming right up!</font></p>
+        <div align=center style="margin: 50px; position: relative;">
+        <img src="../../assets/pizza-pepperoni.jpg"  style="width: 100%; height:100%;"/>
         </div>
        </div>
     </div>
     <div *ngIf="!profile.email_verified" class="Yukti-Order-Pizza">
         <div class="Yukti-Order-Pizza-title">
-        <p align=center><font size="5" color="blue"> You are not a verified customer, Please verify your email! Until then, you can only browse our wonderful menu! </font></p>
+        <p style="margin: 100px; position: relative;" align=center><font size="5" color="blue"> You cannot order since you are not a verified customer, Please verify your email! Until then, you can only browse our wonderful menu! </font></p>
         </div>
     </div>
     </div>

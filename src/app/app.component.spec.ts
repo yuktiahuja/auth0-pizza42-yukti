@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'auth0-angular-demo'`, () => {
+  it(`should have as title 'yukti-auth0-pizza42'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('auth0-angular-demo');
+    expect(app.title).toEqual('yukti-auth0-pizza42');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('auth0-angular-demo app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('yukti-auth0-pizza42 app is running!');
   });
 });

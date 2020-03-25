@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'auth0-angular-demo';
+  title = 'yukti-auth0-pizza42';
 }

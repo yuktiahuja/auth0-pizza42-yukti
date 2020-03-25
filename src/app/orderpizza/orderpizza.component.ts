@@ -9,9 +9,9 @@ import { ProfileComponent } from '../profile/profile.component';
 })
 export class OrderpizzaComponent implements OnInit {
 
-    constructor(public auth: AuthService) { }
+  constructor(public auth: AuthService) { }
 
-    ngOnInit() {
-    }
-
+  ngOnInit(): void {
   }
+
+}

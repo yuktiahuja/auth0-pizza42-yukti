@@ -1,8 +1,14 @@
-
-
-<h3>User Profile</h3>
-
+<div class="Yukti-Profile-Pizza">
+  <p align=center>
+      <font size="5" color="blue">
+      User Profile
+     </font>
 <pre *ngIf="auth.userProfile$ | async as profile">
-  <h5>Name: {{profile.given_name}} {{profile.family_name}}</h5>
+  <div class=Yukti-Verified-Account>
+  <p align=center> <font size="4" color="blue"> Name: {{profile.nickname}} </font></p>
+  <p align=center *ngIf="profile.email_verified"> <font size="4" color="blue">Verified Account</font></p>
+ <p align=center *ngIf="!profile.email_verified"> <font size="4" color="blue">Not a Verified Account</font></p>
 <code>{{ profile | json }}</code>
+</div>
 </pre>
+</div>
